@@ -1,0 +1,45 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      LOGO
+    </ion-title>
+    <ion-button fill="clear" color="dark" slot="secondary" (click)="goHome()"><ion-icon name="home-outline"></ion-icon>HOME</ion-button>
+    <ion-button fill="clear" color="dark" slot="secondary" (click)="goMall()"><ion-icon name="business-outline"></ion-icon>MALL</ion-button>
+    <ion-button fill="clear" color="dark" slot="secondary" (click)="goFit()"><ion-icon name="shirt-outline"></ion-icon>FITTING ROOM</ion-button>
+    <ion-button fill="clear" color="dark" slot="secondary" (click)="goCart()"><ion-icon name="cart-outline"></ion-icon>CART</ion-button>
+    <ion-button fill="clear" color="dark" slot="secondary" (click)="goPersonal()"><ion-icon name="person-outline"></ion-icon>PERSONAL</ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row id="test-title">
+      <ion-text>選擇你喜歡的風格</ion-text>
+    </ion-row>
+    <ion-row id="test-title">
+      <p>會依照你所選的進行分析和推薦</p>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-card>
+          <ion-button fill='clear' id="test-img" style="background-image: url(../../assets/images女.jpg);">
+          </ion-button>
+          <h1>日系可愛風格</h1>
+          <h2>女寬褲</h2>
+        </ion-card>
+        <ion-card>
+          <ion-button fill='clear' id="test-img" style="background-image: url(../../assets/image男.jpg);">
+          </ion-button>
+          <h1>日系可愛風格</h1>
+          <h2>女寬褲</h2>
+        </ion-card>
+        <ion-card>
+          <ion-button fill='clear' id="test-img" style="background-image: url(../../assets/川油畫5.jpg);">
+          </ion-button>
+          <h1>日系可愛風格</h1>
+          <h2>女寬褲</h2>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

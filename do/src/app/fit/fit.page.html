@@ -1,0 +1,72 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>fit</ion-title>
+    <ion-button fill="clear" color="dark" slot="secondary" (click)="goHome()"><ion-icon name="home-outline"></ion-icon>HOME</ion-button>
+    <ion-button fill="clear" color="dark" slot="secondary" (click)="goMall()"><ion-icon name="business-outline"></ion-icon>MALL</ion-button>
+    <ion-button fill="clear" color="dark" slot="secondary" (click)="goFit()"><ion-icon name="shirt-outline"></ion-icon>FITTING ROOM</ion-button>
+    <ion-button fill="clear" color="dark" slot="secondary" (click)="goCart()"><ion-icon name="cart-outline"></ion-icon>CART</ion-button>
+    <ion-button fill="clear" color="dark" slot="secondary" (click)="goPersonal()"><ion-icon name="person-outline"></ion-icon>PERSONAL</ion-button>  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="8">
+        <ion-card id="userphoto">
+          <ion-row>
+            <ion-col id="share">
+              <ion-button fill='clear'><ion-icon name="logo-instagram" id="share-img"></ion-icon></ion-button>
+              <ion-button fill='clear'><ion-icon name="logo-facebook" id="share-img"></ion-icon></ion-button>
+            </ion-col>
+          </ion-row>
+          <ion-row id="userself">
+            <ion-col>
+              <ion-img id="user-img" src="{{ myphoto }}"></ion-img>
+            </ion-col>
+          </ion-row>
+        </ion-card>
+      </ion-col>
+      <ion-col size="4">
+        <ion-row id="search-btn">
+          <ion-button color="medium" id="classify-btn"><ion-icon name="list-circle-outline"></ion-icon>CLASSIFY</ion-button>
+          <ion-button color="medium" id="one-click-btn"><ion-icon name="checkmark-circle-outline"></ion-icon>ONE-CLICK</ion-button>
+        </ion-row>
+        <ion-row>
+          <ion-card id="fit-card">
+          <ion-card>
+            <ion-img src="/assets/庫2.jpg"></ion-img>
+            <p>日系風格</p>
+            <h1>女寬褲</h1>
+          </ion-card>
+          <ion-card>
+            <ion-img src="/assets/風格2.jpg"></ion-img>
+            <p>日系風格</p>
+            <h1>女寬褲</h1>
+          </ion-card>
+          <ion-card>
+            <ion-img src="/assets/image男.jpg"></ion-img>
+            <p>日系風格</p>
+            <h1>女寬褲</h1>
+          </ion-card>
+          <ion-card>
+            <ion-img src="/assets/川油畫5.jpg"></ion-img>
+            <p>日系風格</p>
+            <h1>女寬褲</h1>
+          </ion-card>
+          <ion-card>1</ion-card>
+          <ion-card>1</ion-card>
+          <ion-card>1</ion-card>
+          <ion-card>1</ion-card>
+          <ion-card>1</ion-card>
+          <ion-card>1</ion-card>
+          <ion-card>1</ion-card>
+          <ion-card>1</ion-card>
+          <ion-card>1</ion-card>
+          <ion-card>1</ion-card>
+          <ion-card>1</ion-card>
+        </ion-card>
+        </ion-row>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

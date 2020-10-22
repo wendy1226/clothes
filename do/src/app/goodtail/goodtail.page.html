@@ -1,0 +1,121 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      LOGO
+    </ion-title>
+    <ion-button fill="clear" color="dark" slot="secondary" (click)="goHome()"><ion-icon name="home-outline"></ion-icon>HOME</ion-button>
+    <ion-button fill="clear" color="dark" slot="secondary" (click)="goMall()"><ion-icon name="business-outline"></ion-icon>MALL</ion-button>
+    <ion-button fill="clear" color="dark" slot="secondary" (click)="goFit()"><ion-icon name="shirt-outline"></ion-icon>FITTING ROOM</ion-button>
+    <ion-button fill="clear" color="dark" slot="secondary" (click)="goCart()"><ion-icon name="cart-outline"></ion-icon>CART</ion-button>
+    <ion-button fill="clear" color="dark" slot="secondary" (click)="goPersonal()"><ion-icon name="person-outline"></ion-icon>PERSONAL</ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="container">
+    <ion-grid>
+      <ion-row>
+        <ion-col size='5'>
+          <ion-row>
+            <ion-img src="./assets/風格1.jpg" id="main-img"></ion-img>
+          </ion-row>
+          <ion-row id="sub-row">
+            <ion-col>
+              <ion-img src="./assets/風格1.jpg" id="sub-img"></ion-img>
+            </ion-col>
+            <ion-col>
+              <ion-img src="./assets/風格1.jpg" id="sub-img"></ion-img>
+            </ion-col>
+            <ion-col>
+              <ion-img src="./assets/風格1.jpg" id="sub-img"></ion-img>
+            </ion-col>
+            <ion-col>
+              <ion-img src="./assets/風格1.jpg" id="sub-img"></ion-img>
+            </ion-col>
+          </ion-row>
+        </ion-col>
+        <ion-col size='7' id="col-7">
+          <ion-row>
+            <ion-col id="col-goodtail-cost">
+              <ion-text id="goodtail-name">女寬褲</ion-text>
+            </ion-col>
+            <ion-col id="col-goodtail-cost">
+              <ion-text id="goodtail-style">日系風格</ion-text>
+            </ion-col>
+            <ion-col id="col-goodtail-cost">
+              <ion-text id="goodtail-cost">$500</ion-text>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              <ion-text id="goodtail-gradient">GRADIENT:</ion-text>
+              <ion-text>皮毛</ion-text>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              <ion-radio-group value="DARK">
+                <ion-list-header class="ion-no-padding">
+                  <ion-label>COLOR</ion-label>
+                </ion-list-header>
+              <ion-item>
+                  <ion-label>DARK</ion-label>
+                  <ion-radio slot="start" color="dark" value="DARK"></ion-radio>
+                </ion-item>
+                <ion-item>
+                  <ion-label>WHITE</ion-label>
+                  <ion-radio slot="start" color="dark" value="WHITE"></ion-radio>
+                </ion-item>
+              </ion-radio-group>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              <ion-radio-group value="S">
+                <ion-list-header class="ion-no-padding">
+                  <ion-label>SIZE</ion-label>
+                </ion-list-header>
+              <ion-item>
+                  <ion-label>S</ion-label>
+                  <ion-radio slot="start" color="dark" value="S"></ion-radio>
+                </ion-item>
+                <ion-item>
+                  <ion-label>M</ion-label>
+                  <ion-radio slot="start" color="dark" value="M"></ion-radio>
+                </ion-item>
+                <ion-item>
+                  <ion-label>X</ion-label>
+                  <ion-radio slot="start" color="dark" value="X"></ion-radio>
+                </ion-item>
+              </ion-radio-group>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              <ion-text id="count">數量:</ion-text>
+            </ion-col>
+            <ion-col>
+              
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              <ion-button fill="outline" color="dark" id="goodtail-btn">搭元寶</ion-button>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              <ion-button fill="outline" color="success" id="goodtail-btn">PAY</ion-button>
+            </ion-col>
+            <ion-col>
+              <ion-button fill="outline" color="danger" id="goodtail-btn">+CART</ion-button>
+            </ion-col>
+            <ion-col>
+              <ion-button fill="outline" color="dark" id="goodtail-btn">+FITROOM</ion-button>
+            </ion-col>
+          </ion-row>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+</ion-content>

@@ -1,0 +1,152 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      LOGO
+    </ion-title>
+    <ion-button fill="clear" color="dark" slot="secondary" (click)="goHome()"><ion-icon name="home-outline"></ion-icon>HOME</ion-button>
+    <ion-button fill="clear" color="dark" slot="secondary" (click)="goMall()"><ion-icon name="business-outline"></ion-icon>MALL</ion-button>
+    <ion-button fill="clear" color="dark" slot="secondary" (click)="goFit()"><ion-icon name="shirt-outline"></ion-icon>FITTING ROOM</ion-button>
+    <ion-button fill="clear" color="dark" slot="secondary" (click)="goCart()"><ion-icon name="cart-outline"></ion-icon>CART</ion-button>
+    <ion-button fill="clear" color="dark" slot="secondary" (click)="goPersonal()"><ion-icon name="person-outline"></ion-icon>PERSONAL</ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid id="homefirst">
+    <ion-row>
+      <ion-col size="7" id="homefirst-col">
+        <ion-img src="./assets/homefirst.jpg" id="homefirst-img"></ion-img>
+      </ion-col>
+      <ion-col size="5" id="homefirst-col">
+
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-grid id="homesecond">
+    <ion-row id="homesecond-row">
+      <ion-col id="homesecond-col">
+        <ion-card id="homesecond-card">
+          <ion-img src="./assets/更衣室.jpg" id="homesecond-img"></ion-img>
+          <div id="text-overlay">
+            <div id="overlay-top">
+              <ion-row id="homesecond-card-row"></ion-row>
+              <ion-row id="homesecond-card-row"></ion-row>
+              <ion-row id="homesecond-card-row">
+                <ion-col class="ion-text-center">
+                  <ion-text>個人更衣室</ion-text>
+                </ion-col>
+              </ion-row>
+            </div>
+            <div id="overlay-bottom">
+              <ion-text id="overlay-bottom-text">擁有個人線上更衣室,不須出門即可享受試穿</ion-text>
+            </div>
+          </div>
+        </ion-card>
+        <ion-card id="homesecond-card">
+          <ion-img src="./assets/3D人體模型.jpg" id="homesecond-img"></ion-img>
+          <div id="text-overlay">
+            <div id="overlay-top">
+              <ion-row id="homesecond-card-row"></ion-row>
+              <ion-row id="homesecond-card-row"></ion-row>
+              <ion-row id="homesecond-card-row">
+                <ion-col class="ion-text-center">
+                  <ion-text id="overlay-top-text">人體模型</ion-text>
+                </ion-col>
+              </ion-row>
+            </div>
+            <div id="overlay-bottom">
+              <ion-text id="overlay-bottom-text">打造出你的真實比例3D人體模型,解決線上買衣服無法試穿的缺點</ion-text>
+            </div>
+          </div>
+        </ion-card>
+        <ion-card id="homesecond-card">
+          <ion-img src="./assets/scan.jpg" id="homesecond-img"></ion-img>
+          <div id="text-overlay">
+            <div id="overlay-top">
+              <ion-row id="homesecond-card-row"></ion-row>
+              <ion-row id="homesecond-card-row"></ion-row>
+              <ion-row id="homesecond-card-row">
+                <ion-col class="ion-text-center">
+                  <ion-text id="overlay-top-text">掃描服飾</ion-text>
+                </ion-col>
+              </ion-row>
+            </div>
+            <div id="overlay-bottom">
+              <ion-text id="overlay-bottom-text">在外面可掃描你看到的服飾,放進你的更衣室</ion-text>
+            </div>
+          </div>  
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-grid id="homethird">
+    <ion-row>
+      <ion-col size="7" id="homethird-col">
+        <ion-row>
+          <ion-col></ion-col>
+          <ion-col id="homethird-col-textarea" class="ion-text-center">
+            <ion-row>
+              <ion-col>
+                <ion-text id="homethird-col-text">推薦</ion-text>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col>
+                <ion-text id="homethird-col-text2">透過測驗以及購買等等行為,系統會為你推算出更接近,更適合你的衣服</ion-text>
+              </ion-col>
+            </ion-row>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col id="homethird-col-textarea" class="ion-text-center">
+            <ion-row>
+              <ion-col>
+                <ion-text id="homethird-col-text">即時分享</ion-text>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col>
+                <ion-text id="homethird-col-text2">試穿結果,即可直接分享給好友,讓他們提供建議</ion-text>
+              </ion-col>
+            </ion-row>
+          </ion-col>
+          <ion-col></ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col></ion-col>
+          <ion-col id="homethird-col-textarea" class="ion-text-center">
+            <ion-row>
+              <ion-col>
+                <ion-text id="homethird-col-text">不須出門試穿</ion-text>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col>
+                <ion-text id="homethird-col-text2">線上提供完整試衣過程,在家輕鬆享受</ion-text>
+              </ion-col>
+            </ion-row>
+          </ion-col>
+        </ion-row>
+      </ion-col>
+      <ion-col size="5" id="homethird-col">
+        <ion-img src="./assets/homethird.jpg" id="homethird-img"></ion-img>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-grid id="homefourth">
+    <ion-row>
+      <ion-col size="8" id="home-footer-col1">       
+          <ion-img src="./assets/homefourth-img.png" id="homefourth-img" class="no-margin"></ion-img>
+          <ion-text id="homefourth-text" class="no-margin">智慧穿搭 讓你"佩服"</ion-text>
+      </ion-col>
+      <ion-col size="4" id="home-footer-col2">
+        <ion-row>
+          <ion-col>
+            <ion-button fill="outline" color="dark" (click)="goLogin()" id="home-btn"><ion-icon name="arrow-forward-outline"></ion-icon> GO TO SIGN UP</ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-col>  
+    </ion-row>
+  </ion-grid>
+</ion-content>
+

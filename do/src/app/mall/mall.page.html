@@ -1,0 +1,732 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      LOGO
+    </ion-title>
+    <ion-button fill="clear" color="dark" slot="secondary" (click)="goHome()"><ion-icon name="home-outline"></ion-icon>HOME</ion-button>
+    <ion-button fill="clear" color="dark" slot="secondary" (click)="goMall()"><ion-icon name="business-outline"></ion-icon>MALL</ion-button>
+    <ion-button fill="clear" color="dark" slot="secondary" (click)="goFit()"><ion-icon name="shirt-outline"></ion-icon>FITTING ROOM</ion-button>
+    <ion-button fill="clear" color="dark" slot="secondary" (click)="goCart()"><ion-icon name="cart-outline"></ion-icon>CART</ion-button>
+    <ion-button fill="clear" color="dark" slot="secondary" (click)="goPersonal()"><ion-icon name="person-outline"></ion-icon>PERSONAL</ion-button>
+  </ion-toolbar>
+</ion-header>
+<ion-toolbar>
+  <ion-segment (ionChange)="segmentChanged($event)" value="RECOMMEND">
+    <ion-segment-button value="RECOMMEND">
+      <ion-label>RECOMMEND</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="HOT">
+      <ion-label>HOT</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="NEW">
+      <ion-label>NEW</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+</ion-toolbar>
+
+  <ion-content *ngIf="selectedSegment == 'RECOMMEND'">
+  <ion-grid class="ion-margin-top">
+    <ion-row class="mall-content-row">
+      <ion-col size="3" id="style-circle">
+        <circle-progress [percent]="percent" [title]="title" [subtitle]="subtitle" [space]="-20" [radius]="80" [outerStrokeWidth]="20" 
+        [innerStrokeWidth]="20" [outerStrokeColor]="'#7AFEC6'" [innerStrokeColor]="'#F0F0F0'" 
+        [animation]="true" [animationDuration]="1000"></circle-progress>
+        <ion-card id="mall-spotify-card">
+          <ion-text>根據...這些您的特徵, 本人工智慧系統認為您有 (75%) 是偏向 (日系休閒) 的搭配風格
+          以上判讀是根據本系統大數據庫的使用者特徵來判定, 並未採用個人隱私資料來做判讀, 特此聲明!!!</ion-text>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-row>
+          <ion-col>
+            <ion-card>
+              <ion-button fill='clear' id="mall-img" style="background-image: url(../../assets/images女.jpg);" (click)="goGoodtail()">
+              </ion-button>
+              <ion-card-header>                               
+                  <ion-card-subtitle>日系休閒風</ion-card-subtitle>
+                  <ion-card-title>女寬褲</ion-card-title>
+                  <h1>$500</h1>
+              </ion-card-header>
+              <ion-card-content>
+                  <ion-row>
+                    <ion-col>
+                      <ion-button fill="clear" color="success"><ion-icon name="heart-outline"></ion-icon></ion-button>
+                    </ion-col>
+                    <ion-col>
+                      <ion-button fill="clear" color="dark"><ion-icon name="add-outline"></ion-icon></ion-button>
+                    </ion-col>
+                    <ion-col>
+                      <ion-button fill="clear" color="danger"><ion-icon name="heart-dislike-outline"></ion-icon></ion-button>
+                    </ion-col>
+                  </ion-row>
+              </ion-card-content>
+            </ion-card>
+            <ion-row id="progress-row">
+              <ion-col size="2">
+                <ion-text id="percent">90%</ion-text>
+              </ion-col>
+              <ion-col>
+                <ion-progress-bar value="0.9"></ion-progress-bar>
+              </ion-col>
+            </ion-row>
+          </ion-col>
+        </ion-row>
+      </ion-col>
+      <ion-col>
+        <ion-row>
+          <ion-col>
+            <ion-card>
+              <ion-button fill='clear' id="mall-img" style="background-image: url(../../assets/images女.jpg);">
+              </ion-button>
+              <ion-card-header>                               
+                <ion-card-subtitle>日系休閒風</ion-card-subtitle>
+                <ion-card-title>女寬褲</ion-card-title>
+                <h1>$500</h1>
+              </ion-card-header>
+              <ion-card-content>
+                <ion-row>
+                  <ion-col>
+                    <ion-button fill="clear" color="success"><ion-icon name="heart-outline"></ion-icon></ion-button>
+                  </ion-col>
+                  <ion-col>
+                    <ion-button fill="clear" color="dark"><ion-icon name="add-outline"></ion-icon></ion-button>
+                  </ion-col>
+                  <ion-col>
+                    <ion-button fill="clear" color="danger"><ion-icon name="heart-dislike-outline"></ion-icon></ion-button>
+                  </ion-col>
+                </ion-row>
+              </ion-card-content>
+            </ion-card>
+            <ion-row id="progress-row">
+              <ion-col size="2">
+                <ion-text id="percent">50%</ion-text>
+              </ion-col>
+              <ion-col>
+                <ion-progress-bar value="0.5"></ion-progress-bar>
+              </ion-col>
+            </ion-row>
+          </ion-col>
+        </ion-row>
+      </ion-col>
+      <ion-col>
+        <ion-row>
+          <ion-col>
+            <ion-card>
+              <ion-button fill='clear' id="mall-img" style="background-image: url(../../assets/images女.jpg);">
+              </ion-button>  
+              <ion-card-header>                               
+                <ion-card-subtitle>日系休閒風</ion-card-subtitle>
+                <ion-card-title>女寬褲</ion-card-title>
+                <h1>$500</h1>
+              </ion-card-header>
+              <ion-card-content>
+                <ion-row>
+                  <ion-col>
+                    <ion-button fill="clear" color="success"><ion-icon name="heart-outline"></ion-icon></ion-button>
+                  </ion-col>
+                  <ion-col>
+                    <ion-button fill="clear" color="dark"><ion-icon name="add-outline"></ion-icon></ion-button>
+                  </ion-col>
+                  <ion-col>
+                    <ion-button fill="clear" color="danger"><ion-icon name="heart-dislike-outline"></ion-icon></ion-button>
+                  </ion-col>
+                </ion-row>
+              </ion-card-content>
+            </ion-card>
+            <ion-row id="progress-row">
+              <ion-col size="2">
+                <ion-text id="percent">75%</ion-text>
+              </ion-col>
+              <ion-col>
+                <ion-progress-bar value="0.75"></ion-progress-bar>
+              </ion-col>
+            </ion-row>
+          </ion-col>
+        </ion-row>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-grid class="ion-margin-top">
+    <ion-row>
+      <ion-col size="3" id="style-circle">
+        <circle-progress [percent]="percent2" [title]="title2" [subtitle]="subtitle2" [space]="-20" [radius]="80" [outerStrokeWidth]="20" 
+        [innerStrokeWidth]="20" [outerStrokeColor]="'#7AFEC6'" [innerStrokeColor]="'#F0F0F0'" 
+        [animation]="true" [animationDuration]="1000"></circle-progress>
+        <ion-card id="mall-spotify-card">
+          <ion-text>根據...這些您的特徵, 本人工智慧系統認為您有 (50%) 是偏向 (韓系古著) 的搭配風格
+          以上判讀是根據本系統大數據庫的使用者特徵來判定, 並未採用個人隱私資料來做判讀, 特此聲明!!!</ion-text>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-row>
+          <ion-col>
+            <ion-card>
+              <ion-button fill='clear' id="mall-img" style="background-image: url(../../assets/images女.jpg);">
+              </ion-button>
+              <ion-card-header>                               
+                <ion-card-subtitle>日系休閒風</ion-card-subtitle>
+                <ion-card-title>女寬褲</ion-card-title>
+                <h1>$500</h1>
+              </ion-card-header>
+              <ion-card-content>
+                <ion-row>
+                  <ion-col>
+                    <ion-button fill="clear" color="success"><ion-icon name="heart-outline"></ion-icon></ion-button>
+                  </ion-col>
+                  <ion-col>
+                    <ion-button fill="clear" color="dark"><ion-icon name="add-outline"></ion-icon></ion-button>
+                  </ion-col>
+                  <ion-col>
+                    <ion-button fill="clear" color="danger"><ion-icon name="heart-dislike-outline"></ion-icon></ion-button>
+                  </ion-col>
+                </ion-row>
+              </ion-card-content>
+            </ion-card>
+            <ion-row id="progress-row">
+              <ion-col size="2">
+                <ion-text id="percent">100%</ion-text>
+              </ion-col>
+              <ion-col>
+                <ion-progress-bar value="1"></ion-progress-bar>
+              </ion-col>
+            </ion-row>
+          </ion-col>
+        </ion-row>
+      </ion-col>
+      <ion-col>
+        <ion-row>
+          <ion-col>
+            <ion-card>
+              <ion-button fill='clear' id="mall-img" style="background-image: url(../../assets/images女.jpg);">
+              </ion-button>
+              <ion-card-header>                               
+                <ion-card-subtitle>日系休閒風</ion-card-subtitle>
+                <ion-card-title>女寬褲</ion-card-title>
+                <h1>$500</h1>
+              </ion-card-header>
+              <ion-card-content>
+                <ion-row>
+                  <ion-col>
+                    <ion-button fill="clear" color="success"><ion-icon name="heart-outline"></ion-icon></ion-button>
+                  </ion-col>
+                  <ion-col>
+                    <ion-button fill="clear" color="dark"><ion-icon name="add-outline"></ion-icon></ion-button>
+                  </ion-col>
+                  <ion-col>
+                    <ion-button fill="clear" color="danger"><ion-icon name="heart-dislike-outline"></ion-icon></ion-button>
+                  </ion-col>
+                </ion-row>
+              </ion-card-content>
+            </ion-card>
+            <ion-row id="progress-row">
+              <ion-col size="2">
+                <ion-text id="percent">100%</ion-text>
+              </ion-col>
+              <ion-col>
+                <ion-progress-bar value="1"></ion-progress-bar>
+              </ion-col>
+            </ion-row>
+          </ion-col>
+        </ion-row>
+      </ion-col>
+      <ion-col>
+        <ion-row>
+          <ion-col>
+            <ion-card>
+              <ion-button fill='clear' id="mall-img" style="background-image: url(../../assets/images女.jpg);">
+              </ion-button>
+              <ion-card-header>                               
+                <ion-card-subtitle>日系休閒風</ion-card-subtitle>
+                <ion-card-title>女寬褲</ion-card-title>
+                <h1>$500</h1>
+              </ion-card-header>
+              <ion-card-content>
+                <ion-row>
+                  <ion-col>
+                    <ion-button fill="clear" color="success"><ion-icon name="heart-outline"></ion-icon></ion-button>
+                  </ion-col>
+                  <ion-col>
+                    <ion-button fill="clear" color="dark"><ion-icon name="add-outline"></ion-icon></ion-button>
+                  </ion-col>
+                  <ion-col>
+                    <ion-button fill="clear" color="danger"><ion-icon name="heart-dislike-outline"></ion-icon></ion-button>
+                  </ion-col>
+                </ion-row>
+              </ion-card-content>
+            </ion-card>
+            <ion-row id="progress-row">
+              <ion-col size="2">
+                <ion-text id="percent">100%</ion-text>
+              </ion-col>
+              <ion-col>
+                <ion-progress-bar value="1"></ion-progress-bar>
+              </ion-col>
+            </ion-row>
+          </ion-col>
+        </ion-row>
+      </ion-col>
+    </ion-row>
+  </ion-grid> 
+</ion-content>
+
+<ion-content *ngIf="selectedSegment == 'HOT'">
+  <ion-grid class="ion-margin-top">
+    <ion-row class="mall-content-row">
+      <ion-col size="3" id="style-circle">
+      </ion-col>
+      <ion-col>
+        <ion-row>
+          <ion-col>
+            <ion-card>
+              <ion-button fill='clear' id="mall-img" style="background-image: url(../../assets/images女.jpg);" (click)="goGoodtail()">
+              </ion-button>
+              <ion-card-header>                               
+                  <ion-card-subtitle>日系休閒風</ion-card-subtitle>
+                  <ion-card-title>女寬褲</ion-card-title>
+                  <h1>$500</h1>
+              </ion-card-header>
+              <ion-card-content>
+                  <ion-row>
+                    <ion-col>
+                      <ion-button fill="clear" color="success"><ion-icon name="heart-outline"></ion-icon></ion-button>
+                    </ion-col>
+                    <ion-col>
+                      <ion-button fill="clear" color="dark"><ion-icon name="add-outline"></ion-icon></ion-button>
+                    </ion-col>
+                    <ion-col>
+                      <ion-button fill="clear" color="danger"><ion-icon name="heart-dislike-outline"></ion-icon></ion-button>
+                    </ion-col>
+                  </ion-row>
+              </ion-card-content>
+            </ion-card>
+            <ion-row id="progress-row">
+              <ion-col size="2">
+                <ion-text id="percent">90%</ion-text>
+              </ion-col>
+              <ion-col>
+                <ion-progress-bar value="0.9"></ion-progress-bar>
+              </ion-col>
+            </ion-row>
+          </ion-col>
+        </ion-row>
+      </ion-col>
+      <ion-col>
+        <ion-row>
+          <ion-col>
+            <ion-card>
+              <ion-button fill='clear' id="mall-img" style="background-image: url(../../assets/images女.jpg);">
+              </ion-button>
+              <ion-card-header>                               
+                <ion-card-subtitle>日系休閒風</ion-card-subtitle>
+                <ion-card-title>女寬褲</ion-card-title>
+                <h1>$500</h1>
+              </ion-card-header>
+              <ion-card-content>
+                <ion-row>
+                  <ion-col>
+                    <ion-button fill="clear" color="success"><ion-icon name="heart-outline"></ion-icon></ion-button>
+                  </ion-col>
+                  <ion-col>
+                    <ion-button fill="clear" color="dark"><ion-icon name="add-outline"></ion-icon></ion-button>
+                  </ion-col>
+                  <ion-col>
+                    <ion-button fill="clear" color="danger"><ion-icon name="heart-dislike-outline"></ion-icon></ion-button>
+                  </ion-col>
+                </ion-row>
+              </ion-card-content>
+            </ion-card>
+            <ion-row id="progress-row">
+              <ion-col size="2">
+                <ion-text id="percent">50%</ion-text>
+              </ion-col>
+              <ion-col>
+                <ion-progress-bar value="0.5"></ion-progress-bar>
+              </ion-col>
+            </ion-row>
+          </ion-col>
+        </ion-row>
+      </ion-col>
+      <ion-col>
+        <ion-row>
+          <ion-col>
+            <ion-card>
+              <ion-button fill='clear' id="mall-img" style="background-image: url(../../assets/images女.jpg);">
+              </ion-button>  
+              <ion-card-header>                               
+                <ion-card-subtitle>日系休閒風</ion-card-subtitle>
+                <ion-card-title>女寬褲</ion-card-title>
+                <h1>$500</h1>
+              </ion-card-header>
+              <ion-card-content>
+                <ion-row>
+                  <ion-col>
+                    <ion-button fill="clear" color="success"><ion-icon name="heart-outline"></ion-icon></ion-button>
+                  </ion-col>
+                  <ion-col>
+                    <ion-button fill="clear" color="dark"><ion-icon name="add-outline"></ion-icon></ion-button>
+                  </ion-col>
+                  <ion-col>
+                    <ion-button fill="clear" color="danger"><ion-icon name="heart-dislike-outline"></ion-icon></ion-button>
+                  </ion-col>
+                </ion-row>
+              </ion-card-content>
+            </ion-card>
+            <ion-row id="progress-row">
+              <ion-col size="2">
+                <ion-text id="percent">75%</ion-text>
+              </ion-col>
+              <ion-col>
+                <ion-progress-bar value="0.75"></ion-progress-bar>
+              </ion-col>
+            </ion-row>
+          </ion-col>
+        </ion-row>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-grid class="ion-margin-top">
+    <ion-row>
+      <ion-col size="3" id="style-circle">
+      </ion-col>
+      <ion-col>
+        <ion-row>
+          <ion-col>
+            <ion-card>
+              <ion-button fill='clear' id="mall-img" style="background-image: url(../../assets/images女.jpg);">
+              </ion-button>
+              <ion-card-header>                               
+                <ion-card-subtitle>日系休閒風</ion-card-subtitle>
+                <ion-card-title>女寬褲</ion-card-title>
+                <h1>$500</h1>
+              </ion-card-header>
+              <ion-card-content>
+                <ion-row>
+                  <ion-col>
+                    <ion-button fill="clear" color="success"><ion-icon name="heart-outline"></ion-icon></ion-button>
+                  </ion-col>
+                  <ion-col>
+                    <ion-button fill="clear" color="dark"><ion-icon name="add-outline"></ion-icon></ion-button>
+                  </ion-col>
+                  <ion-col>
+                    <ion-button fill="clear" color="danger"><ion-icon name="heart-dislike-outline"></ion-icon></ion-button>
+                  </ion-col>
+                </ion-row>
+              </ion-card-content>
+            </ion-card>
+            <ion-row id="progress-row">
+              <ion-col size="2">
+                <ion-text id="percent">100%</ion-text>
+              </ion-col>
+              <ion-col>
+                <ion-progress-bar value="1"></ion-progress-bar>
+              </ion-col>
+            </ion-row>
+          </ion-col>
+        </ion-row>
+      </ion-col>
+      <ion-col>
+        <ion-row>
+          <ion-col>
+            <ion-card>
+              <ion-button fill='clear' id="mall-img" style="background-image: url(../../assets/images女.jpg);">
+              </ion-button>
+              <ion-card-header>                               
+                <ion-card-subtitle>日系休閒風</ion-card-subtitle>
+                <ion-card-title>女寬褲</ion-card-title>
+                <h1>$500</h1>
+              </ion-card-header>
+              <ion-card-content>
+                <ion-row>
+                  <ion-col>
+                    <ion-button fill="clear" color="success"><ion-icon name="heart-outline"></ion-icon></ion-button>
+                  </ion-col>
+                  <ion-col>
+                    <ion-button fill="clear" color="dark"><ion-icon name="add-outline"></ion-icon></ion-button>
+                  </ion-col>
+                  <ion-col>
+                    <ion-button fill="clear" color="danger"><ion-icon name="heart-dislike-outline"></ion-icon></ion-button>
+                  </ion-col>
+                </ion-row>
+              </ion-card-content>
+            </ion-card>
+            <ion-row id="progress-row">
+              <ion-col size="2">
+                <ion-text id="percent">100%</ion-text>
+              </ion-col>
+              <ion-col>
+                <ion-progress-bar value="1"></ion-progress-bar>
+              </ion-col>
+            </ion-row>
+          </ion-col>
+        </ion-row>
+      </ion-col>
+      <ion-col>
+        <ion-row>
+          <ion-col>
+            <ion-card>
+              <ion-button fill='clear' id="mall-img" style="background-image: url(../../assets/images女.jpg);">
+              </ion-button>
+              <ion-card-header>                               
+                <ion-card-subtitle>日系休閒風</ion-card-subtitle>
+                <ion-card-title>女寬褲</ion-card-title>
+                <h1>$500</h1>
+              </ion-card-header>
+              <ion-card-content>
+                <ion-row>
+                  <ion-col>
+                    <ion-button fill="clear" color="success"><ion-icon name="heart-outline"></ion-icon></ion-button>
+                  </ion-col>
+                  <ion-col>
+                    <ion-button fill="clear" color="dark"><ion-icon name="add-outline"></ion-icon></ion-button>
+                  </ion-col>
+                  <ion-col>
+                    <ion-button fill="clear" color="danger"><ion-icon name="heart-dislike-outline"></ion-icon></ion-button>
+                  </ion-col>
+                </ion-row>
+              </ion-card-content>
+            </ion-card>
+            <ion-row id="progress-row">
+              <ion-col size="2">
+                <ion-text id="percent">100%</ion-text>
+              </ion-col>
+              <ion-col>
+                <ion-progress-bar value="1"></ion-progress-bar>
+              </ion-col>
+            </ion-row>
+          </ion-col>
+        </ion-row>
+      </ion-col>
+    </ion-row>
+  </ion-grid> 
+</ion-content>
+
+<ion-content *ngIf="selectedSegment == 'NEW'">
+  <ion-grid class="ion-margin-top">
+    <ion-row class="mall-content-row">
+      <ion-col size="3" id="style-circle">
+      </ion-col>
+      <ion-col>
+        <ion-row>
+          <ion-col>
+            <ion-card>
+              <ion-button fill='clear' id="mall-img" style="background-image: url(../../assets/images女.jpg);" (click)="goGoodtail()">
+              </ion-button>
+              <ion-card-header>                               
+                  <ion-card-subtitle>日系休閒風</ion-card-subtitle>
+                  <ion-card-title>女寬褲</ion-card-title>
+                  <h1>$500</h1>
+              </ion-card-header>
+              <ion-card-content>
+                  <ion-row>
+                    <ion-col>
+                      <ion-button fill="clear" color="success"><ion-icon name="heart-outline"></ion-icon></ion-button>
+                    </ion-col>
+                    <ion-col>
+                      <ion-button fill="clear" color="dark"><ion-icon name="add-outline"></ion-icon></ion-button>
+                    </ion-col>
+                    <ion-col>
+                      <ion-button fill="clear" color="danger"><ion-icon name="heart-dislike-outline"></ion-icon></ion-button>
+                    </ion-col>
+                  </ion-row>
+              </ion-card-content>
+            </ion-card>
+            <ion-row id="progress-row">
+              <ion-col size="2">
+                <ion-text id="percent">90%</ion-text>
+              </ion-col>
+              <ion-col>
+                <ion-progress-bar value="0.9"></ion-progress-bar>
+              </ion-col>
+            </ion-row>
+          </ion-col>
+        </ion-row>
+      </ion-col>
+      <ion-col>
+        <ion-row>
+          <ion-col>
+            <ion-card>
+              <ion-button fill='clear' id="mall-img" style="background-image: url(../../assets/images女.jpg);">
+              </ion-button>
+              <ion-card-header>                               
+                <ion-card-subtitle>日系休閒風</ion-card-subtitle>
+                <ion-card-title>女寬褲</ion-card-title>
+                <h1>$500</h1>
+              </ion-card-header>
+              <ion-card-content>
+                <ion-row>
+                  <ion-col>
+                    <ion-button fill="clear" color="success"><ion-icon name="heart-outline"></ion-icon></ion-button>
+                  </ion-col>
+                  <ion-col>
+                    <ion-button fill="clear" color="dark"><ion-icon name="add-outline"></ion-icon></ion-button>
+                  </ion-col>
+                  <ion-col>
+                    <ion-button fill="clear" color="danger"><ion-icon name="heart-dislike-outline"></ion-icon></ion-button>
+                  </ion-col>
+                </ion-row>
+              </ion-card-content>
+            </ion-card>
+            <ion-row id="progress-row">
+              <ion-col size="2">
+                <ion-text id="percent">50%</ion-text>
+              </ion-col>
+              <ion-col>
+                <ion-progress-bar value="0.5"></ion-progress-bar>
+              </ion-col>
+            </ion-row>
+          </ion-col>
+        </ion-row>
+      </ion-col>
+      <ion-col>
+        <ion-row>
+          <ion-col>
+            <ion-card>
+              <ion-button fill='clear' id="mall-img" style="background-image: url(../../assets/images女.jpg);">
+              </ion-button>  
+              <ion-card-header>                               
+                <ion-card-subtitle>日系休閒風</ion-card-subtitle>
+                <ion-card-title>女寬褲</ion-card-title>
+                <h1>$500</h1>
+              </ion-card-header>
+              <ion-card-content>
+                <ion-row>
+                  <ion-col>
+                    <ion-button fill="clear" color="success"><ion-icon name="heart-outline"></ion-icon></ion-button>
+                  </ion-col>
+                  <ion-col>
+                    <ion-button fill="clear" color="dark"><ion-icon name="add-outline"></ion-icon></ion-button>
+                  </ion-col>
+                  <ion-col>
+                    <ion-button fill="clear" color="danger"><ion-icon name="heart-dislike-outline"></ion-icon></ion-button>
+                  </ion-col>
+                </ion-row>
+              </ion-card-content>
+            </ion-card>
+            <ion-row id="progress-row">
+              <ion-col size="2">
+                <ion-text id="percent">75%</ion-text>
+              </ion-col>
+              <ion-col>
+                <ion-progress-bar value="0.75"></ion-progress-bar>
+              </ion-col>
+            </ion-row>
+          </ion-col>
+        </ion-row>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-grid class="ion-margin-top">
+    <ion-row>
+      <ion-col size="3" id="style-circle">
+      </ion-col>
+      <ion-col>
+        <ion-row>
+          <ion-col>
+            <ion-card>
+              <ion-button fill='clear' id="mall-img" style="background-image: url(../../assets/images女.jpg);">
+              </ion-button>
+              <ion-card-header>                               
+                <ion-card-subtitle>日系休閒風</ion-card-subtitle>
+                <ion-card-title>女寬褲</ion-card-title>
+                <h1>$500</h1>
+              </ion-card-header>
+              <ion-card-content>
+                <ion-row>
+                  <ion-col>
+                    <ion-button fill="clear" color="success"><ion-icon name="heart-outline"></ion-icon></ion-button>
+                  </ion-col>
+                  <ion-col>
+                    <ion-button fill="clear" color="dark"><ion-icon name="add-outline"></ion-icon></ion-button>
+                  </ion-col>
+                  <ion-col>
+                    <ion-button fill="clear" color="danger"><ion-icon name="heart-dislike-outline"></ion-icon></ion-button>
+                  </ion-col>
+                </ion-row>
+              </ion-card-content>
+            </ion-card>
+            <ion-row id="progress-row">
+              <ion-col size="2">
+                <ion-text id="percent">100%</ion-text>
+              </ion-col>
+              <ion-col>
+                <ion-progress-bar value="1"></ion-progress-bar>
+              </ion-col>
+            </ion-row>
+          </ion-col>
+        </ion-row>
+      </ion-col>
+      <ion-col>
+        <ion-row>
+          <ion-col>
+            <ion-card>
+              <ion-button fill='clear' id="mall-img" style="background-image: url(../../assets/images女.jpg);">
+              </ion-button>
+              <ion-card-header>                               
+                <ion-card-subtitle>日系休閒風</ion-card-subtitle>
+                <ion-card-title>女寬褲</ion-card-title>
+                <h1>$500</h1>
+              </ion-card-header>
+              <ion-card-content>
+                <ion-row>
+                  <ion-col>
+                    <ion-button fill="clear" color="success"><ion-icon name="heart-outline"></ion-icon></ion-button>
+                  </ion-col>
+                  <ion-col>
+                    <ion-button fill="clear" color="dark"><ion-icon name="add-outline"></ion-icon></ion-button>
+                  </ion-col>
+                  <ion-col>
+                    <ion-button fill="clear" color="danger"><ion-icon name="heart-dislike-outline"></ion-icon></ion-button>
+                  </ion-col>
+                </ion-row>
+              </ion-card-content>
+            </ion-card>
+            <ion-row id="progress-row">
+              <ion-col size="2">
+                <ion-text id="percent">100%</ion-text>
+              </ion-col>
+              <ion-col>
+                <ion-progress-bar value="1"></ion-progress-bar>
+              </ion-col>
+            </ion-row>
+          </ion-col>
+        </ion-row>
+      </ion-col>
+      <ion-col>
+        <ion-row>
+          <ion-col>
+            <ion-card>
+              <ion-button fill='clear' id="mall-img" style="background-image: url(../../assets/images女.jpg);">
+              </ion-button>
+              <ion-card-header>                               
+                <ion-card-subtitle>日系休閒風</ion-card-subtitle>
+                <ion-card-title>女寬褲</ion-card-title>
+                <h1>$500</h1>
+              </ion-card-header>
+              <ion-card-content>
+                <ion-row>
+                  <ion-col>
+                    <ion-button fill="clear" color="success"><ion-icon name="heart-outline"></ion-icon></ion-button>
+                  </ion-col>
+                  <ion-col>
+                    <ion-button fill="clear" color="dark"><ion-icon name="add-outline"></ion-icon></ion-button>
+                  </ion-col>
+                  <ion-col>
+                    <ion-button fill="clear" color="danger"><ion-icon name="heart-dislike-outline"></ion-icon></ion-button>
+                  </ion-col>
+                </ion-row>
+              </ion-card-content>
+            </ion-card>
+            <ion-row id="progress-row">
+              <ion-col size="2">
+                <ion-text id="percent">100%</ion-text>
+              </ion-col>
+              <ion-col>
+                <ion-progress-bar value="1"></ion-progress-bar>
+              </ion-col>
+            </ion-row>
+          </ion-col>
+        </ion-row>
+      </ion-col>
+    </ion-row>
+  </ion-grid> 
+  </ion-content>

@@ -1,0 +1,70 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>cart</ion-title>
+    <ion-button fill="clear" color="dark" slot="secondary" (click)="goHome()"><ion-icon name="home-outline"></ion-icon>HOME</ion-button>
+    <ion-button fill="clear" color="dark" slot="secondary" (click)="goMall()"><ion-icon name="business-outline"></ion-icon>MALL</ion-button>
+    <ion-button fill="clear" color="dark" slot="secondary" (click)="goFit()"><ion-icon name="shirt-outline"></ion-icon>FITTING ROOM</ion-button>
+    <ion-button fill="clear" color="dark" slot="secondary" (click)="goCart()"><ion-icon name="cart-outline"></ion-icon>CART</ion-button>
+    <ion-button fill="clear" color="dark" slot="secondary" (click)="goPersonal()"><ion-icon name="person-outline"></ion-icon>PERSONAL</ion-button>  
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-card>
+          <ion-grid>
+            <ion-row class="ion-align-items-center">
+              <ion-col size="3">
+                <ion-img src="/assets/庫2.jpg"></ion-img>
+              </ion-col>
+              <ion-col size="7">
+                <ion-row>
+                  <ion-col>
+                    <ion-text id="cart-good-name">女寬褲</ion-text>
+                  </ion-col>           
+                </ion-row>
+                <ion-row>
+                  <ion-col>
+                    <ion-text id="cart-style" color="medium">日系休閒風</ion-text>            
+                  </ion-col>
+                  <ion-col class="ion-text-right">
+                    <ion-text id="cart-good-cost" color="medium">$500</ion-text>
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col>
+                    <ion-text id="cart-color" color="medium">黑色</ion-text>            
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col>
+                    <ion-text id="cart-size" color="medium">M</ion-text>
+                  </ion-col>
+                </ion-row>
+              </ion-col>
+              <ion-col size="2" class="ion-text-center">
+                <ion-button fill="clear">
+                  <ion-icon id="delete" name="close-outline" color="dark"></ion-icon>
+                </ion-button>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-card>
+        <ion-row id="pay-row">
+          <ion-col>
+
+          </ion-col>
+          <ion-col class="ion-text-center">
+            <ion-text id="sum-cost">商品總價格:</ion-text>
+            <ion-text id="sum-cost">500</ion-text>
+          </ion-col>
+          <ion-col class="ion-text-center">
+            <ion-button fill="outline" color="success" id="pay-btn" class="ion-margin-top">PAY</ion-button>
+          </ion-col>  
+        </ion-row>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

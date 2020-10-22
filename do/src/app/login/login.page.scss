@@ -1,0 +1,130 @@
+#container {
+    text-align: center;
+  
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  #container strong {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  
+  #container p {
+    font-size: 16px;
+    line-height: 22px;
+    color: #8c8c8c;
+    margin: 0;
+  }
+  
+  #container a {
+    text-decoration: none;
+  }
+  
+  ion-router-link{
+    margin: 0px 15px 0px 15px;
+  }
+  
+  ion-content{
+    --ion-background-color:	#F0F0F0;
+  }
+  
+  ion-card{
+    --ion-background-color:	#FFFFFF;
+    width: 60%;
+    height: auto; 
+    margin: auto;
+    margin-top: 80px;
+  }
+  
+  ion-text{
+    font-size: 40px;
+    font-weight: bold;
+  }
+  
+  ion-grid{
+    padding: 0%;
+  }
+  
+  ion-item{
+    margin: 15px 60px 10px 60px; 
+    padding-left: 0px;
+  }
+  
+  #signin-btn{
+    color:white;
+    --border-color:white;
+  }
+
+  #signin-btn:active{
+    transform: scale(1.1,0.9);
+  }
+  
+  #signup-btn{
+    color:#383a3e;
+    --border-color:#383a3e;
+  }
+
+  #signup-btn:active{
+    transform: scale(1.1,0.9);
+  }
+  
+  h1{
+    font-weight: bold;
+    color: white;
+  }
+  
+  .register-text{
+    text-align: center;
+  }
+  
+  .hello-Background{
+    background-image: linear-gradient(to right,#1cd8d2
+    ,#93edc7);
+  }
+  
+  .ion-padding{
+    padding: 0px 16px 35px 16px;
+  }
+  
+  #register-text-color{
+    color: #383a3e;
+  }
+  
+  #hello-header{
+    margin-top: 140px;
+    padding: 0%;
+  }
+  
+  #hello-content{
+    margin: 20px 0px 0px 0px;
+    padding: 0%;
+  }
+  
+  #register-header{
+    margin-top: 60px;
+    padding: 0%;
+  }
+  
+  #register-content{
+    margin: 25px 0px 60px 0px;
+    padding: 0%;
+  }
+
+  #specify{
+    font-size: 14px;
+    font-weight: lighter;
+    color: #FFFFFF;
+  }
+
+  #arrow-up-color{
+    color: white;
+  }
+
+  #sign-in-text{
+    font-size: 12px;
+  }
+  

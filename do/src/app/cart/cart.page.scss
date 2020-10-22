@@ -1,0 +1,58 @@
+ion-content{
+    --ion-background-color:	#F0F0F0;
+}
+
+ion-card{
+    --ion-background-color:	#FFFFFF;
+    width: 50%;
+    height: auto;
+    margin: auto;
+    margin-top: 80px;
+}
+
+ion-img{
+    width: 100%;
+}
+
+#delete{
+    font-size: 30px;
+}
+
+#cart-good-name{
+    font-size: 40px;
+    font-weight: bold;
+    color: #666666;
+}
+
+#cart-style{
+    font-size: 28px;
+    font-weight: lighter;
+}
+
+#cart-good-cost{
+    font-size: 28px;
+    font-weight: lighter;
+}
+
+#cart-color{
+    font-size: 20px;
+}
+
+#cart-size{
+    font-size: 20px;
+}
+
+#pay-row{
+    width: 50%;
+    height: auto;
+    margin: auto;
+    margin-top: 10px;
+}
+
+#pay-btn{
+    margin: 0;
+}
+
+#sum-cost{
+    font-size: 25px;
+}

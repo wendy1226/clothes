@@ -1,0 +1,73 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      LOGO
+    </ion-title>
+    <ion-button fill="clear" color="dark" slot="secondary" (click)="goHome()"><ion-icon name="home-outline"></ion-icon>HOME</ion-button>
+    <ion-button fill="clear" color="dark" slot="secondary" (click)="goMall()"><ion-icon name="business-outline"></ion-icon>MALL</ion-button>
+    <ion-button fill="clear" color="dark" slot="secondary" (click)="goFit()"><ion-icon name="shirt-outline"></ion-icon>FITTING ROOM</ion-button>
+    <ion-button fill="clear" color="dark" slot="secondary" (click)="goCart()"><ion-icon name="cart-outline"></ion-icon>CART</ion-button>
+    <ion-button fill="clear" color="dark" slot="secondary" (click)="goPersonal()"><ion-icon name="person-outline"></ion-icon>PERSONAL</ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-toolbar>
+  <ion-segment (ionChange)="segmentChanged($event)" value="MODIFY">
+    <ion-segment-button value="MODIFY">
+      <ion-label>MODIFY</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="RECORD">
+      <ion-label>RECORD</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+</ion-toolbar>
+
+<ion-content *ngIf="selectedSegment == 'MODIFY'">
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-card class="ion-text-center">
+          <ion-form>
+            <ion-avatar>
+              <ion-img src="/assets/庫2.jpg"></ion-img>
+            </ion-avatar>
+            <ion-item>
+              <ion-label>NAME:</ion-label>
+              <ion-input type="text"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label>TEL:</ion-label>
+              <ion-input type="tel"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label>ADDRESS:</ion-label>
+              <ion-input type="text"></ion-input>
+            </ion-item>
+            <ion-button id="modify-btn" type="submit" fill="outline" color="dark">MODIFY</ion-button>
+          </ion-form>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+
+<ion-content *ngIf="selectedSegment == 'RECORD'">
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-card class="ion-text-center" id="big-card">
+          <ion-card id="card-in-recordcard">
+
+          </ion-card>
+          <ion-card id="card-in-recordcard">
+
+          </ion-card>
+          <ion-card id="card-in-recordcard">
+
+          </ion-card>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+

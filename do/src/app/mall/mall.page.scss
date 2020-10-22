@@ -1,0 +1,132 @@
+ion-segment-button{
+    font-size: 30px;
+    font-weight: bold;
+    --color-hover: white;
+    --color-checked: black;
+    --background-hover-opacity:#92949c;
+    --background-hover:#92949c;
+}
+
+ion-col{
+    text-align: center;
+    padding: 0px;
+    height: 100%;
+}
+
+ion-content{
+    --ion-background-color:	#F0F0F0;
+}
+
+ion-card{
+    --ion-background-color:	#FFFFFF;
+    height: 400px;
+    width: 250px;
+    padding: 0px;
+    margin: 0px;
+}
+
+ion-card-header{
+    padding: 3px 0px 0px 0px;
+    orientation: vertical;
+    text-align: left;
+}
+
+ion-img{
+    height: 60%;
+    width: 100%;
+    object-fit: cover;
+}
+
+ion-card-title{
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 1px;
+    padding: 0px 0px 0px 5px;
+    color: #666666;
+}
+
+ion-card-subtitle{
+    font-size: 15px;
+    font-weight: lighter;
+    margin-top: 1px;
+    padding: 0px 0px 0px 5px;
+}
+
+h1{
+    margin: 0%;
+    padding-left: 5px;
+}
+
+ion-progress-bar{
+    width: 195px;
+    height: 20px;
+    --progress-background: #7AFEC6;
+    --background: #F0F0F0;
+}
+
+ion-segment{
+    background-color:#F0F0F0;
+}
+
+ion-card-content{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: left;
+    margin-top: 1px;
+    padding: 0px;
+    color: #666666;
+}
+
+#mall-img{
+    height: 60%;
+    width: 100%;
+    object-fit: cover;
+    background-size:cover;
+    margin: 0;
+}
+
+.ion-margin-top{
+    margin-top: 50px;
+}
+
+.mall-content-row{
+    height:400px;
+}
+
+#style-position{
+    position: relative;
+}
+
+#style-card{
+    width: 75%;
+}
+
+#style-text{
+    font-size: 30px;
+    font-weight: bold;
+    color: #92949c;
+}
+
+#style-circle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+}
+
+#progress-row{
+    margin-top: 2%;
+}
+
+#mall-spotify-card{
+    font-size: 12px;
+    width: 130px;
+    height: 130px;
+    border: solid 2px red;
+    background-color: #F0F0F0;
+}
+
+#mall-spotify-card ::part{
+    color: #F0F0F0;
+}
